@@ -199,7 +199,7 @@
               </div>
             </div>
             <div class="column is-8">
-              <div class="box has-text-centered" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+              <div class="box has-text-justified" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
                 <p>Once the base functions are learned, we estimate a new user's preferences using only 10–20 preference examples. By showing the user carefully selected response pairs and recording their choices, we refine their preference model iteratively. We employ an <b>active learning strategy</b>, selecting response pairs that will minimize uncertainty and so minimize the number of examples required while ensuring accurate personalization.</p>
               </div>
             </div>
@@ -209,8 +209,8 @@
               </div>
             </div>
             <div class="column is-8">
-              <div class="box has-text-centered" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
-                <p>Instead of retraining or fine-tuning an LLM for each user, we dynamically adjust model outputs during inference. We achieve this using reward-weighted decoding, which conditions the model's response generation on the user’s inferred preference weights. This enables real-time adaptation to individual user preferences without incurring the high computational costs of retraining.</p>
+              <div class="box has-text-justified" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <p>Instead of retraining or fine-tuning an LLM for each user, we dynamically adjust model outputs during inference. We achieve this using inference-time alignment algorithms, which condition the model's response generation on the user’s inferred preference weights. This enables real-time adaptation to individual user preferences without incurring the high computational costs of retraining.</p>
               </div>
             </div>
           </div>
@@ -258,8 +258,7 @@
     <section class="hero is-light is-small">
         <div class="hero-body has-text-centered">
             <h1 class="title is-1 mathvista">
-                <img src="static/images/prefevallogo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-                <span class="mathvista" style="vertical-align: middle">Experiment Results</span>
+                <span class="mathvista" style="vertical-align: middle">Experimental Results</span>
             </h1>
         </div>
     </section>
