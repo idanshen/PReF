@@ -176,42 +176,44 @@
   </div>
 </section>
 
+<section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content">
-          <div class="columns is-multiline">
+          <div class="columns is-multiline" style="align-items: stretch;">
             <!-- Key Statistics -->
             <div class="column is-4">
-              <div class="box has-text-centered">
+              <div class="box has-text-centered" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
                 <img src="static/images/1.png" class="figure" alt="Step 1">
               </div>
             </div>
             <div class="column is-8">
-              <div class="box has-text-justified"">
-                <p>We first collect a dataset where multiple users annotate response preferences. This dataset captures the diversity of user preferences across various tasks. Using <b>logistic matrix factorization</b>, we uncover shared preference dimensions, allowing us to represent user-specific reward functions as a weighted combination of these base functions. This structured approach reduces the need for large-scale individual user data while maintaining personalization accuracy.t</p>
+              <div class="box has-text-justified" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <p>We first collect a dataset where multiple users annotate response preferences. This dataset captures the diversity of user preferences across various tasks. Using <b>logistic matrix factorization</b>, we uncover shared preference dimensions, allowing us to represent user-specific reward functions as a weighted combination of these base functions. This structured approach reduces the need for large-scale individual user data while maintaining personalization accuracy.</p>
               </div>
             </div>
             <div class="column is-4">
-              <div class="box has-text-centered">
+              <div class="box has-text-centered" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
                 <img src="static/images/2.png" class="figure" alt="Step 2">
               </div>
             </div>
             <div class="column is-8">
-              <div class="box has-text-centered">
+              <div class="box has-text-centered" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
                 <p>Once the base functions are learned, we estimate a new user's preferences using only 10–20 preference examples. By showing the user carefully selected response pairs and recording their choices, we refine their preference model iteratively. We employ an <b>active learning strategy</b>, selecting response pairs that will minimize uncertainty and so minimize the number of examples required while ensuring accurate personalization.</p>
               </div>
             </div>
             <div class="column is-4">
-              <div class="box has-text-centered">
+              <div class="box has-text-centered" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
                 <img src="static/images/3.png" class="figure" alt="Step 3">
               </div>
             </div>
             <div class="column is-8">
-              <div class="box has-text-centered">
-                <p>example text</p>
+              <div class="box has-text-centered" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <p>Instead of retraining or fine-tuning an LLM for each user, we dynamically adjust model outputs during inference. We achieve this using reward-weighted decoding, which conditions the model's response generation on the user’s inferred preference weights. This enables real-time adaptation to individual user preferences without incurring the high computational costs of retraining.</p>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
