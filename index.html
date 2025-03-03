@@ -139,6 +139,9 @@
             <p>
                 In this paper, we introduce a new approach to efficiently personalize LLMs using a low-dimensional reward factorization framework. Our method allows models to align with user-specific preferences using as few as 10 preference examples, significantly improving user satisfaction compared to standard RLHF.
             </p>
+            <p>
+                In our human experiment, we were able to personalized GPT4o responses to the user preference, leading to a <b>68\% win rate</b> against the non-personalized responses.
+            </p>
         </div>
       </div>
     </div>
@@ -265,7 +268,15 @@
 
     <!-- Section 1: Main Performance Comparisons -->
     <section class="carousel-section">
-        <h2 class="title is-2 has-text-centered section-title">Main Performance Comparisons</h2>
+        <h2 class="title is-2 has-text-centered section-title">The Benefits of Personalization</h2>
+        <div class="results-carousel">
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/data_efficiency.png" alt="Main Results" width="50%"/>
+                    <p><b>Using our Reward Factorization framework leads to x30 improvement in data efficiency compared to training a separate reward model per user</b></p>
+                </div>
+            </div>
+        </div>
         <div class="results-carousel">
             <div class="box m-5">
                 <div class="content has-text-centered">
